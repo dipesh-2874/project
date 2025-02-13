@@ -1,0 +1,16 @@
+
+p{
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    height: 100vh;
+}
+body{
+    background-color: black;
+}
+button{
+    justify-content: baseline;
+}
