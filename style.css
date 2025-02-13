@@ -1,0 +1,33 @@
+body{
+    background-image: url('https://shorturl.at/NUGNt');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: rgb(56, 56, 56);
+    text-shadow: rgb(56, 56, 56);
+}
+.container{
+    justify-content: left;
+    align-items: baseline;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.707);
+    box-shadow: 0 5px 10px rgba(106, 106, 106, 0.446);
+}
+h5{
+    color: aquamarine;
+}
+li{
+    color: aqua;
+}
+button{
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}

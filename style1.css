@@ -1,11 +1,12 @@
 p{
-    color: antiquewhite;
+    color: rgb(27, 26, 24);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     flex-direction: column;
 }
 body{
-    background-color: black;
+background-image: url('https://shorturl.at/S1Glz');
+background-size: cover;
+background-position: center;
 }
