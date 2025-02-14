@@ -7,7 +7,8 @@
     <title>Get-Healed/Sign In</title>
 </head>
 <body>
-    <input type="text" placeholder="Full Name">
+    <form>
+    <input type="text" placeholder="Full Name" required>
     <br>
     <input type="number" placeholder="Mobile Number">
     <br>
@@ -20,10 +21,8 @@
     <input type="date">
     <br>
     <p>Select your Gender</p>
-    <form>
         <input type="radio" name="xxx">Male
         <input type="radio" name="xxx">Female
-    </form>
     <p>Where are you from</p>
     <input type="text" placeholder="state">
     <br>
@@ -36,8 +35,9 @@
     use cookies and similar technology in our <a target="_blank" href="terms.html">Cookies Policy</a>. You 
     may recieve SMS Notifications from us and can opt out any time.</p>
     <br>
-    <button>
-        <a href="signincon.html">Confirm</a>
+    <button href="signincon.html">
+    <!-- <input type="submit" onclick="NXTPG()"/> -->
     </button>
+    </form>
 </body>
 </html>
