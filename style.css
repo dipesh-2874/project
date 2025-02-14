@@ -10,7 +10,77 @@ body{
     box-shadow: rgb(56, 56, 56);
     text-shadow: rgb(56, 56, 56);
 }
-.container{
+
+button:active{
+    transform: scale(0.85);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 5vh;
+}
+.btn{
+    position: relative;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    background: rgb(0, 0, 0); 
+    transition: 0.5s;
+    overflow: hidden; 
+ }
+ .btn:hover{
+     color: var(--clr);
+     text-shadow: 0 0 15px var(--clr),
+     0 0 40px var(--clr);
+ }
+ .btn span{
+     position: relative;
+     z-index: 1;
+ }
+ .btn::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     transform: translate(-30%, -45%);
+     transform: translate();
+     width: 200px;
+     height: 200px;
+     background: radial-gradient(var(--clr), transparent, transparent);
+     transition: 0.5s,top 0s,left 0s;
+     opacity: 0;
+ }
+ .btn:hover::before{
+     opacity: 1;
+ }
+ .btn::after{
+     content: '';
+     position: absolute;
+     inset: 2px;
+     background: rgba(45,45,45,0.8);
+     border-radius: 10px;
+ }
+ button{
+    position: relative;
+    padding: 4px 2px;
+    border-radius: 15px;
+    color: #93e8ff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    background: rgba(45,45,45,1); 
+    transition: 0.5s;
+    overflow: hidden; 
+ }
+ 
+ .container{
     justify-content: left;
     align-items: baseline;
     max-width: 200px;
@@ -25,12 +95,4 @@ h5{
 }
 li{
     color: aqua;
-}
-button{
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-button:active{
-    transform: scale(0.85);
 }
