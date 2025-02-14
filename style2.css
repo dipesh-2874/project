@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://shorturl.at/tnlDm');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    height: 80vh;
+    font-size: small;
+    color: antiquewhite;
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.contnr{
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 30%;
+    background-color: aquamarine;
+    border-radius: 15px;
+    border-width: 5px aquamarine;
+    box-shadow: 0 5px 10px rgba(106, 106, 106, 0.446);
+    color: #000000;
+}
+button:active{
+     transform: scale(0.85);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+}
+.enter{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.entryarea{
+    position: relative;  
+}
+input{
+    position: relative;
+    width: 100%;
+    outline: none;
+    font-size: 2em;
+    padding: 0 20px;
+    line-height: 8px;
+    border-radius: 1px;
+    border: 0.1px solid #ffffff;
+    color: rgb(0, 0, 0);
+}

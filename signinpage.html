@@ -8,23 +8,42 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <section>
     <img src="https://shorturl.at/0XuUg" alt="meaow">
-    <p><strong>You really came to sign in 🎀🥹</strong></p>
-<div>
-    <p><strong>Sign In through Email or Mobile Number</strong></p>
-    <input type="text" placeholder="Enter your e-Mail or Mobile Number">
-    <br>
-    <input type="password" placeholder="Password">
-    <br>
-    <button>
-        <a style="text-decoration: none; color: antiquewhite;" href="signincon.html">Submit</a>
-    </button>
+    <h3><strong>You really came to sign in 🎀🥹</strong></h3>
+    </section>
+<div class="box">
+    <div class="container">
+        <p><strong>Sign In through Email or Mobile Number</strong></p>
+        <div class="login-form">
+            <h4>Enter email</h4>
+            <div class="username-input">
+                <i class="fas fa-users"></i>
+                <input type="email" placeholder="email" id="username">
+            </div>
+            <h4>Password</h4>
+            <div>
+                <i class="fas fa-users-lock"></i>
+                <input type="password" placeholder="Type your password" id="password">
+            </div>
+            <a target="_blank" href="forgotpass.html">Forgot password?</a>
+        </div>
+        <div>
+            <button style="text-decoration: none; color: antiquewhite;" class="login-btn" onclick="func()">LOGIN</button>
+        </div>
+    </div>
 </div>
+    <section>
     <img src="https://shorturl.at/XqAd3" alt="meaow" width="250" height="200">
     <p>Don't have any account...Don't worry 😸
         <button>
         <a style="text-decoration:none; color: rgb(255, 255, 255);" href="createaccount.html">Sign Up</a>
         </button>
     </p>
+    <div>
+        <p>BTW, you can check our <a target="_blank"  href="terms.html">Terms & Conditions</a> here</p>
+    </div>
+    </section>
+    <script src="login.js"></script>
 </body>
 </html>
