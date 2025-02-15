@@ -23,6 +23,46 @@ height: 100vh;
     background-color: rgba(255, 197, 197, 0.707);
     box-shadow: 0 5px 10px rgba(106, 106, 106, 0.446);
 }
+.contaner{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: small;
+    border-spacing: 10;
+}
+.entryarea{
+    position: relative; 
+}
+input{
+    position: relative;
+    width: 90%;
+    outline: none;
+    font-size: 2.2em;
+    padding: 0 20px;
+    line-height: 8px;
+    border-radius: 1px;
+    border: 0.1px solid ;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+input:focus{
+    color: #c16b9d;
+    border: 4px solid #c16b9d;
+
+} 
+input:focus + .labelline,
+input:valid + .labelline{
+    color: #c16b9d;
+    border: 4px solid #c16b9d;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 22px;
+    transform: translate(-15px,-16px) scale(0.88); 
+    z-index: 1111;
+}
 .box{
     display: flex;
     justify-content: center;
@@ -30,8 +70,49 @@ height: 100vh;
     height: 50vh;
 }
 button{
-    background-color: rgb(53, 3, 84);
+    color: rgb(255, 187, 231);
+    background-color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    transition: 0.5s; 
 }
-button:active{
-    transform: scale(0.85);
+
+button span{
+    position: relative;
+    z-index: 1;
+}
+button:hover{
+    color: var(--clr);
+    text-shadow: 0 0 15px var(--clr),
+    0 0 40px var(--clr);
+}
+/* button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5;
+    transform: translate(-30%, 250%);
+    transform: translate();
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(var(--clr), transparent, transparent);
+    transition: 0.5s,top 0s,left 0s;
+    opacity: 0;
+} */
+button:hover::before{
+    opacity: 1;
+}
+button::after{
+    content: '';
+    inset: 2px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+} 
+.sub{
+    color: rgb(255, 158, 239);
+    background-color: rgb(0, 0, 0);
 }
