@@ -90,19 +90,7 @@ button:hover{
     text-shadow: 0 0 15px var(--clr),
     0 0 40px var(--clr);
 }
-/* button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 5;
-    transform: translate(-30%, 250%);
-    transform: translate();
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(var(--clr), transparent, transparent);
-    transition: 0.5s,top 0s,left 0s;
-    opacity: 0;
-} */
+
 button:hover::before{
     opacity: 1;
 }
