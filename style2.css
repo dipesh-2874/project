@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('https://shorturl.at/tnlDm');
+    background-image: url('/pics/peeking.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
